@@ -9,19 +9,39 @@ The book is downloadable here: https://allesinalab.uchicago.edu/wp-content/uploa
 II. Answer the following question. What does this do?   
 
 1. ls [A-Z]*
+	Lists anything in the directory starting with a capital letter.
 2. cp *.sh /tmp
+	Copies anything ending in ".sh" to the directory "tmp".
 3. man pwd
+	Gives you the manual page for the "pwd" command.
 4. cd ~
+	Takes you to your home directory.
 5. mkdir -p /test1/test2/test3 
+	Recursively makes the directories "test1" containing the directory
+	"test2" containing directory "test3".
 6. cp -r /tmp .
+	copies everything in the tmp directory to the current directory.
 7. ls | less
+	Lists everything in the current directory in the "less" format
+	(progressively printed to the screen).
 8. head -n 24 test.txt » abc.txt
+	Appends the first 24 lines of test.txt to abc.txt.
 9. echo "aaa" > aaa.txt
+	Creates the file aaa.txt and writes "aaa" into it.
 10. ps -u sallesina
+	Lists the current processes for the user sallesina.
 11. top
+	Displays Linux tasks.
 12. ls | grep .sh | xargs mv /tmp
+	Lists files, groups those containing ".sh", and moves them to the 
+	"tmp" directory.
 13. du -sk /home/* | sort -r -n | head -10
+	Estimates file space usage and gives the current size of anything
+        in the home directory. It orders them numerically, reverses the
+        order, and then outputs the first 10 lines of this.
 14. sort -r names.txt
+	This gives a reverse alphabetical sort of the lines in the text 
+	file names.txt.
 
 **IMPORTANT** 
 To submit your answers you must do the following:
